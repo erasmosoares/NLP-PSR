@@ -44,7 +44,7 @@ This projet is divided into 2 sub-projects
 python -m spacy train .\config.cfg --output .\output --paths.train .\data\train.spacy --paths.dev .\data\test.spacy
 ```
 8. This process wil take some time, after finish you will see an output folder with two subfolders, model-best and model-last.
-9. Run 04_Prediction to see the final entity extracted, note the predictions file is cofigured to parse slips that contains this attributes ( name, org, role, date, base, hours, ltd, gains, deductions, nette), you shou adjust as necessary.
+9. Run 04_Prediction to see the final entity extracted, note the predictions file is configured to parse slips that contains theses attributes ( name, org, role, date, base, hours, ltd, gains, deductions, nette), you should adjust as necessary.
 10. The 05_FinalPredictions.ipynb is just a test to read the predictions.py, which is a synthesized python file containing everything from 04_Predictions.
 
 ## Slips-App
