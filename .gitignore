@@ -1,3 +1,13 @@
+# Data Training 
+Slips-App/static/media/*
+Slips-Reader/stubs/*
+Slips-reader/slips-tag.txt
+Slips-reader/slips.csv
+Slips-reader/data/*
+
+output
+docuscanenv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
