@@ -20,7 +20,7 @@ This projet is divided into 2 sub-projects
     * 04_Predictions.ipynb
     * 05_FinalPredictions.ipynb
  
-# Instructions
+# Instructions to run the project
 
 Make sure to create a python environment with all dependencies and packages, if you use Anaconda, create a new environment on Anaconda.Navigator based on base root and add these packages:
 
@@ -75,8 +75,7 @@ python main.py
 
 ## 1 - Data Preparation
 
-In this data preparation phase, we are preparing the data for an automatic document extraction
-text app.
+In this data preparation phase, we are preparing the data for an automatic text extraction.
 
 ```
 01_Pytesseract.ipynb
@@ -104,7 +103,7 @@ text app.
 
 To extract text from the slip images, we utilize Pytesseract, an OCR (Optical Character
 Recognition) tool developed by Google. Pytesseract allows us to convert the text within the
-images into machine-readable format. Using Pytesseract, we extract the text from each of the business card images, enabling us to
+images into machine-readable format. Using Pytesseract, we extract the text from each of the slips images, enabling us to
 obtain the necessary text data for further processing.
 
 ### 1.3 Text Cleaning and Organization
@@ -152,20 +151,20 @@ effectiveness of the subsequent training process.
 
 ### 2.3 Converting to Spacy Training Format
 
- In this step, we convert the preprocessed data into the Spacy training format specifically
+In this step, we convert the preprocessed data into the Spacy training format specifically
 designed for Named Entity Recognition (NER). Spacy is a popular NLP library that
 provides efficient tools and models for various natural language processing tasks.
-o We take each business card text as an example and demonstrate the Spacy
+We take each slips text as an example and demonstrate the Spacy
 training format for NER. The format typically consists of the original text and a
 list of entities, where each entity is represented by its start and end indices, along
 with the corresponding label.
-o We follow the Spacy training format and transform the preprocessed data into this
+We follow the Spacy training format and transform the preprocessed data into this
 structure for each business card text in the dataset.
 
 ### 2.4 Repetitions form all payement slips
 
-Next, we repeat step 4 for all the business card data in our dataset. This ensures that each
-business card text is processed and converted into the Spacy training format, allowing us
+Next, we repeat step 4 for all slips data in our dataset. This ensures that each
+slip text is processed and converted into the Spacy training format, allowing us
 to include a diverse range of examples in our training data.
 
 
@@ -175,9 +174,9 @@ Finally, we split the processed data into training and testing sets. This divisi
 to evaluate the performance of the trained model on unseen data and assess its
 generalization capabilities.
 
- We assign a portion of the processed data as the training set, which will be used to
+We assign a portion of the processed data as the training set, which will be used to
 train the NER model.
-o The remaining portion is allocated as the test set, which serves as an independent
+The remaining portion is allocated as the test set, which serves as an independent
 sample to evaluate the model's performance and gauge its ability to correctly
 identify entities in new slips texts.
 
@@ -189,8 +188,7 @@ identify entities in new slips texts.
 ```
 
 In this step, we will train a Named Entity Recognition (NER) model using Spacy. The NER
-model will learn to recognize and classify entities such as person names, designations,
-organizations, phone numbers, emails, and websites from the labeled business card data.
+model will learn to recognize and classify entities such as person names, gains, date from the labeled slips data.
 
 
 ### 3.1 Spacy Installation and Model Initialization
