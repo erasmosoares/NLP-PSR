@@ -69,6 +69,7 @@ This is a front-end app in Flask to upload an image and extract the text, to exe
 
 ```
 python main.py
+<<<<<<< Updated upstream
 ```
 
 # Project Phases
@@ -236,3 +237,6 @@ https://opencv.org/
 https://flask.palletsprojects.com/
 7. Data Science Anyquehere & Visionview Team.
 
+=======
+```
+>>>>>>> Stashed changes
